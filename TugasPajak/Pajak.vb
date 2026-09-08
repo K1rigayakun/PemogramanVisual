@@ -2,9 +2,6 @@
     Private Sub Form2_Load(sender As Object, e As EventArgs) Handles MyBase.Load
     End Sub
 
-    Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
-
-    End Sub
 
     Private Sub txtPend_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtPend.KeyPress
         If Not Char.IsControl(e.KeyChar) AndAlso Not Char.IsDigit(e.KeyChar) Then

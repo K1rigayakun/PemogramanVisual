@@ -12,7 +12,6 @@ Public Class login
         path.AddEllipse(0, 0, pictBox.Width, pictBox.Height)
         pictBox.Region = New Region(path)
         rolePilih.SelectedIndex = 0
-
     End Sub
 
     Private Sub pictBox_Click(sender As Object, e As EventArgs) Handles pictBox.Click
@@ -44,9 +43,6 @@ Public Class login
         End If
     End Sub
 
-    Private Sub txtNama_TextChanged(sender As Object, e As EventArgs) Handles txtNama.TextChanged
-
-    End Sub
 
     Private Sub btnLogin_Click(sender As Object, e As EventArgs) Handles btnLogin.Click
         If String.IsNullOrWhiteSpace(txtNama.Text) Then
