@@ -33,5 +33,15 @@
         MessageBox.Show("Pendapatan: Rp " & pendapatan.ToString("N0", New Globalization.CultureInfo("id-ID")) & vbCrLf &
                          "Pajak: " & persenPajak & "%" & vbCrLf &
                          "Jumlah Pajak: Rp " & jumlahPajak.ToString("N0", New Globalization.CultureInfo("id-ID")), "Informasi")
+
+
+    End Sub
+
+    Private Sub btnClose_Click(sender As Object, e As EventArgs) Handles btnClose.Click
+        Me.Close()
+        login.Show()
+        login.txtNIM.Clear()
+        login.txtNama.Clear()
+
     End Sub
 End Class

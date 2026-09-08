@@ -27,6 +27,7 @@ Partial Class hitungpajak
         Label2 = New Label()
         txtPend = New TextBox()
         btnHitung = New Button()
+        btnClose = New Button()
         SuspendLayout()
         ' 
         ' Label1
@@ -69,18 +70,28 @@ Partial Class hitungpajak
         ' 
         ' btnHitung
         ' 
-        btnHitung.Location = New Point(382, 361)
+        btnHitung.Location = New Point(312, 361)
         btnHitung.Name = "btnHitung"
         btnHitung.Size = New Size(94, 29)
         btnHitung.TabIndex = 5
         btnHitung.Text = "Hitung"
         btnHitung.UseVisualStyleBackColor = True
         ' 
+        ' btnClose
+        ' 
+        btnClose.Location = New Point(477, 361)
+        btnClose.Name = "btnClose"
+        btnClose.Size = New Size(94, 29)
+        btnClose.TabIndex = 6
+        btnClose.Text = "Keluar"
+        btnClose.UseVisualStyleBackColor = True
+        ' 
         ' hitungpajak
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(927, 562)
+        Controls.Add(btnClose)
         Controls.Add(btnHitung)
         Controls.Add(txtPend)
         Controls.Add(Label2)
@@ -97,4 +108,5 @@ Partial Class hitungpajak
     Friend WithEvents Label2 As Label
     Friend WithEvents txtPend As TextBox
     Friend WithEvents btnHitung As Button
+    Friend WithEvents btnClose As Button
 End Class
