@@ -1,16 +1,3 @@
-# 📘 Masterclass Pemrograman Visual (VB.NET — .NET 10)
-
-**Panduan Lengkap Pertemuan 1 s.d. 8, Kamus Besar Semua Fungsi, Pembatas Input (Hanya Angka/Huruf), Semua Kode File 100% Full (Tanpa Dipotong), & Solusi Lengkap Tugas**
-
-> [!IMPORTANT]
-> **Prinsip Panduan Ini (Ramah Awam, Kode 100% Utuh, & Penjelasan Bebas Pengulangan):**
-> 1. **Bahasa Orang Awam:** Semua konsep teknis dijelaskan menggunakan analogi sehari-hari sebelum masuk ke baris kode.
-> 2. **Semua Kode Ditulis 100% Utuh (Full Code):** Setiap file (`FrmUtama.vb`, `ModValidasi.vb`, `FrmUjiKonversi.vb`, `FrmPendaftaran.vb`, `FrmDariArray.vb`, `Mahasiswa.vb`, `FrmDariList.vb`, `ModPencarian.vb`, `FrmDataTable.vb`, `ModDataContoh.vb`, `FrmCariList.vb`, hingga kode solusi **Tugas `FrmPeminjamanBuku.vb`** dan **Tugas `FrmInventarisBuku.vb`**) ditulis **lengkap dari baris pertama sampai `End Class` / `End Module`** agar bisa langsung kamu *copy-paste* dan jalankan di Visual Studio.
-> 3. **Penjelasan Tidak Diulang-Ulang:** Walaupun kodenya ditulis utuh di setiap file, penjelasan teorinya **hanya dibedah satu kali saat fungsi tersebut pertama kali muncul**. Pada form berikutnya, kita cukup memberi komentar penanda bagian mana yang baru atau berubah.
-> 4. **Dilengkapi Semua Fungsi Pembatas Input:** Termasuk fungsi untuk membatasi ketikan **hanya nomor/angka**, **hanya huruf dan spasi**, **alfanumerik**, **desimal koma/titik**, baik lewat fungsi pengecekan (`Function`) maupun penguncian tombol keyboard langsung saat mengetik (`Event KeyPress`).
-
----
-
 ## 🗺️ Daftar Isi Modul Pembelajaran
 
 1. **Modul 0:** Peta Materi & Bedah Lengkap Semua Tools (Visual Studio, .NET 10, WinForms, Pustaka, & Database)
