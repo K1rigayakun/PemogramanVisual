@@ -3,3 +3,9 @@ obj/
 bin/
 Push.bat/
 .json/
+.bat/
+.zip/
+.agents/
+agent.md
+context.md
+skill.md
