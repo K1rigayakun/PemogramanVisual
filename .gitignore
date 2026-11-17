@@ -1,7 +1,7 @@
 .vs/
 obj/
 bin/
-Push.bat/
+Push.bat
 .json/
 .bat/
 .zip/
