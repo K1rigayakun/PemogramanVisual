@@ -1,0 +1,51 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <RootNamespace>FormPendaftaran</RootNamespace>
+    <StartupObject>Sub Main</StartupObject>
+    <UseWindowsForms>true</UseWindowsForms>
+    <EnableWindowsTargeting>true</EnableWindowsTargeting>
+    <OptionStrict>On</OptionStrict>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="FrmUtama.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FrmUtama.Designer.vb">
+      <DependentUpon>FrmUtama.vb</DependentUpon>
+    </Compile>
+    <EmbeddedResource Update="FrmUtama.resx">
+      <DependentUpon>FrmUtama.vb</DependentUpon>
+    </EmbeddedResource>
+    <Compile Update="FrmUjiKonversi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FrmUjiKonversi.Designer.vb">
+      <DependentUpon>FrmUjiKonversi.vb</DependentUpon>
+    </Compile>
+    <EmbeddedResource Update="FrmUjiKonversi.resx">
+      <DependentUpon>FrmUjiKonversi.vb</DependentUpon>
+    </EmbeddedResource>
+    <Compile Update="FrmPendaftaran.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FrmPendaftaran.Designer.vb">
+      <DependentUpon>FrmPendaftaran.vb</DependentUpon>
+    </Compile>
+    <EmbeddedResource Update="FrmPendaftaran.resx">
+      <DependentUpon>FrmPendaftaran.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>

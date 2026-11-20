@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <RootNamespace>Praktikum5</RootNamespace>
+    <StartupObject>Sub Main</StartupObject>
+    <UseWindowsForms>true</UseWindowsForms>
+    <EnableWindowsTargeting>true</EnableWindowsTargeting>
+    <OptionStrict>On</OptionStrict>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="FrmKoleksi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FrmKoleksi.Designer.vb">
+      <DependentUpon>FrmKoleksi.vb</DependentUpon>
+    </Compile>
+    <EmbeddedResource Update="FrmKoleksi.resx">
+      <DependentUpon>FrmKoleksi.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>
