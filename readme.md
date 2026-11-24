@@ -29,6 +29,7 @@ Setiap folder praktikum dilengkapi dengan proyek `.slnx` / `.sln` yang siap dibu
 | **Pertemuan 09–10** | Evaluasi Tengah Semester (UTS / Responsi) | Lihat Tabel Tugas di Bawah | - |
 | **Pertemuan 11** | Windows API / P/Invoke (`GetTickCount64`, `SetWindowPos`, `RegisterHotKey`, `MessageBeep`) | [Praktikum pertemuan 11.slnx](./Praktikum%2011/Praktikum%20pertemuan%2011.slnx) | [Buka Materi](./Praktikum%2011/readme.md) |
 | **Pertemuan 12** | `MenuStrip`, `ContextMenuStrip`, Dialog Modal, & Arsitektur MDI Administrasi Mahasiswa | [AdministrasiMahasiswaMdi.sln](./Praktikum%2012/AdministrasiMahasiswaMdi.sln) | [Buka Materi](./Praktikum%2012/readme.md) |
+| **Pertemuan 13** | Packaging Proyek Akhir WinForms, Supabase Auth/Data API, & Row Level Security (RLS) | [DaftarTugas.vbproj](./Praktikum%2013/DaftarTugas/DaftarTugas.vbproj) | [Buka Materi](./Praktikum%2013/readme.md) |
 
 ---
 
@@ -81,7 +82,7 @@ Proyek `Praktikum 6` membaca Connection String dari file `appsettings.json`. Jik
 
 ## Kamus Sintaks & Rujukan Cepat VB.NET
 
-Rujukan ringkas seluruh perintah, properti, dan fungsi penting dari Pertemuan 1 s.d. 12:
+Rujukan ringkas seluruh perintah, properti, dan fungsi penting dari Pertemuan 1 s.d. 13:
 
 ### 1. Komponen Antarmuka (UI Controls) & Naming Convention
 
@@ -227,3 +228,9 @@ End Try
 - Cegah jendela anak kembar dengan menelusuri `Me.MdiChildren` (`TypeOf anak Is FrmTujuan`).
 - Atur posisi jendela anak lewat `Me.LayoutMdi(MdiLayout.Cascade / TileHorizontal / TileVertical)`.
 - Tahan penutupan Form jika user membatalkan lewat `e.Cancel = True` di event `FormClosing`.
+
+### 13. Packaging Proyek Akhir WinForms, Supabase Auth/Data API, & RLS
+
+- Aplikasi terdistribusi mengakses PostgreSQL melalui **Supabase Auth (`/auth/v1/token`) & Data API (`/rest/v1/...`)** via `HttpClient`, bukan koneksi langsung dengan password database.
+- Aktifkan **Row Level Security (RLS)** (`auth.uid() = pemilik_id`) dan hak akses minimum (`grant select`, `grant update (kolom)`) untuk peran `authenticated`.
+- Atur metadata rilis di `.vbproj` (`AssemblyName`, `Product`, `Version`, `FileVersion`, `ApplicationIcon`), lalu publish dengan konfigurasi `Release`, `Self-contained`, `win-x64`.

@@ -150,4 +150,4 @@ Aplikasi terdiri dari 4 Form dan 1 Module startup ([Program.vb](./Program.vb)):
 
 ---
 
-Navigasi: [Pertemuan 11](../Praktikum%2011/readme.md) | [Kembali ke README Utama](../readme.md)
+Navigasi: [Pertemuan 11](../Praktikum%2011/readme.md) | [Kembali ke README Utama](../readme.md) | [Pertemuan 13](../Praktikum%2013/readme.md)
